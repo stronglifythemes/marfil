@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="builder" content="Stronglify">
+<link rel="icon" type="image/x-icon" href="https://media.stronglify.com/295/favicon-1790697226-1791468462.svg">
+<title>Cómo diseñar mejores experiencias digitales · Marfil</title>
+<meta name="description" content="Una buena experiencia digital comienza entendiendo a las personas que usan el producto, no las pantallas que queremos construir.">
+<meta name="robots" content="index">
+<link rel="canonical" href="https://stronglifythemes.github.io/marfil/"><style>
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}img{max-width:100%;height:auto}
+</style><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+<script src="https://media.stronglify.com/tailwind-play-3.4.17.js"></script>
+<script>tailwind.config={theme:{extend:{colors:{marfil:'#ECE9E1',hueso:'#E3DFD5',lino:'#D8D1C2',arena:'#C7BCA5',tinta:'#1C1A17',humo:'#6E685E'},fontFamily:{serif:['Newsreader','Georgia','serif'],grot:['Archivo','"Helvetica Neue"','Arial','sans-serif']}}}}</script>
+<style>:focus-visible{outline:2px solid #1C1A17;outline-offset:4px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}</style></head>
+<body class="bg-marfil text-tinta antialiased selection:bg-tinta selection:text-marfil">
+  
+<header class="absolute inset-x-0 top-0 z-30">
+  <div class="flex items-start justify-between px-[7.5vw] pt-6 lg:pt-8">
+    <a href="/marfil/" aria-label="Marfil, inicio">
+      <span class="inline-block font-sans text-xl font-semibold tracking-tight">Marfil Medellín</span>
+    </a>
+    <nav class="hidden md:block" aria-label="Principal">
+      <ul class="flex gap-12 font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] [font-stretch:112%] lg:text-[12.5px]">
+        
+        <li><a href="/marfil/" class="transition-colors duration-200 hover:text-humo">Inicio</a></li>
+        
+        <li><a href="/marfil/page" class="transition-colors duration-200 hover:text-humo">Nosotros</a></li>
+        
+        <li><a href="/marfil/blog" class="transition-colors duration-200 hover:text-humo">Blog</a></li>
+        
+        <li><a href="/marfil/#contacto" class="transition-colors duration-200 hover:text-humo">Contacto</a></li>
+        
+      </ul>
+    </nav>
+    <button id="menu-boton" type="button" class="-m-3 p-3 transition-colors duration-200 hover:text-humo font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] [font-stretch:112%] md:hidden" aria-expanded="false" aria-controls="menu-movil">Menú</button>
+  </div>
+  <div id="menu-movil" class="mx-[7.5vw] mt-4 hidden border-t border-tinta/20 bg-marfil pb-6 pt-4 md:hidden">
+    <ul class="font-serif text-3xl leading-snug">
+      
+      <li><a href="/marfil/" class="block py-1 transition-colors duration-200 hover:text-humo">Inicio</a></li>
+      
+      <li><a href="/marfil/page" class="block py-1 transition-colors duration-200 hover:text-humo">Nosotros</a></li>
+      
+      <li><a href="/marfil/blog" class="block py-1 transition-colors duration-200 hover:text-humo">Blog</a></li>
+      
+      <li><a href="/marfil/#contacto" class="block py-1 transition-colors duration-200 hover:text-humo">Contacto</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+<script>var boton=document.getElementById('menu-boton');var menu=document.getElementById('menu-movil');boton.addEventListener('click',function(){var abierto=boton.getAttribute('aria-expanded')==='true';boton.setAttribute('aria-expanded',String(!abierto));menu.classList.toggle('hidden')});</script>
+
+<main>
+
+  <article>
+    <header class="grid grid-cols-12 items-end gap-y-10 px-[7.5vw] pt-32 lg:gap-y-14 lg:pt-48">
+      <a href="/marfil/blog" class="col-span-3 font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] [font-stretch:112%] transition-colors duration-200 hover:text-humo lg:text-[12.5px]">Diseño</a>
+      <h1 class="col-span-9 -mb-[0.18em] text-right font-serif text-[34px] font-medium leading-[1.02] tracking-[-0.02em] [text-wrap:balance] sm:text-[44px] lg:text-[60px]">Cómo diseñar mejores experiencias digitales</h1>
+      <p class="col-span-12 font-serif text-[21px] [text-wrap:pretty] leading-[1.35] lg:col-span-5 lg:col-start-8 lg:text-[24px]">Una buena experiencia digital comienza entendiendo a las personas que usan el producto, no las pantallas que queremos construir.</p>
+    </header>
+
+    <img src="https://media.stronglify.com/295/marfil-19-1790697242-1791468459.jpg" alt="Portátil con código abierto sobre un escritorio de trabajo" width="1600" height="900" class="mt-16 h-[280px] w-full bg-hueso object-cover sm:h-[380px] lg:mt-24 lg:h-[560px]">
+
+    <div class="grid grid-cols-12 px-[7.5vw] pb-20 pt-14 lg:pb-28 lg:pt-20">
+      <div class="col-span-12 max-w-[38rem] font-serif text-[18px] leading-relaxed text-tinta/80 [text-wrap:pretty] lg:text-[20px] [&_p]:mt-6 [&_h2]:mt-16 [&_h2]:text-[28px] [&_h2]:font-medium [&_h2]:leading-tight [&_h2]:tracking-[-0.02em] [&_h2]:text-tinta lg:[&_h2]:text-[36px] [&_h3]:mt-10 [&_h3]:text-[22px] [&_h3]:italic [&_h3]:leading-snug [&_h3]:text-tinta lg:[&_h3]:text-[26px] [&_ul]:mt-6 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:mt-6 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mt-2 [&_li]:pl-1 [&_a]:border-b [&_a]:border-tinta [&_a]:text-tinta [&_a]:transition-colors [&_a]:duration-200 [&_a:hover]:border-humo [&_a:hover]:text-humo [&_blockquote]:my-14 [&_blockquote]:border-t [&_blockquote]:border-tinta/15 [&_blockquote]:pt-10 [&_blockquote_p]:mt-0 [&_blockquote_p]:text-[27px] [&_blockquote_p]:leading-[1.2] [&_blockquote_p]:tracking-[-0.01em] [&_blockquote_p]:text-tinta lg:[&_blockquote_p]:text-[36px] [&_figure]:my-14 [&_img]:w-full [&_img]:bg-lino [&_figcaption]:mt-4 [&_figcaption]:font-grot [&_figcaption]:text-[10.5px] [&_figcaption]:uppercase [&_figcaption]:leading-[1.15] [&_figcaption]:tracking-[0.035em] [&_figcaption]:[font-stretch:112%] lg:[&_figcaption]:text-[12.5px] lg:col-span-7 lg:col-start-6">
+        <p style="text-align: left;">Diseñar no es decorar. Es tomar decisiones que ayudan a alguien a lograr lo que vino a hacer, con el menor esfuerzo posible. Cuando esas decisiones están bien tomadas, casi nadie las nota; cuando fallan, todos las sufren.</p><p style="text-align: left;">En este artículo repasamos los principios que usamos en cada proyecto y cómo aplicarlos desde el primer boceto. Si quieres ver cómo trabajamos, visita <a href="/marfil/page">nuestra página de proceso</a>.</p><h2 style="text-align: left;"> Empezar por las personas </h2><p style="text-align: left;">Antes de abrir una herramienta de diseño conviene responder tres preguntas sencillas sobre quién va a usar el producto:</p><ul style="text-align: left;"><li>Qué intenta conseguir cuando llega.</li><li>Qué le impide conseguirlo hoy.</li><li>Cómo sabrá que lo consiguió.</li></ul><h3 style="text-align: left;"> Escuchar antes de proponer </h3><p style="text-align: left;">Una conversación de veinte minutos con un usuario real suele revelar más que una semana de suposiciones. Anota sus palabras exactas: son el mejor material para títulos, botones y mensajes.</p><p style="text-align: left;"><em>El buen diseño es tan poco diseño como sea posible.</em></p><img  src="https://media.stronglify.com/295/marfil-20-1790697174-1791468463.jpg" alt="Equipo revisando ideas alrededor de una mesa" /><p style="text-align: left;">Las mejores decisiones salen de revisar el trabajo en equipo.</p><h2 style="text-align: left;"> Simplificar cada paso </h2><p style="text-align: left;">Una vez claro el objetivo, el trabajo consiste en quitar todo lo que no ayuda a alcanzarlo:</p><ol style="text-align: left;"><li>Reducir las opciones visibles a las que realmente se usan.</li><li>Escribir textos cortos y concretos.</li><li>Probar con personas reales y ajustar.</li></ol><p style="text-align: left;">Repetir este ciclo con constancia es lo que convierte un producto correcto en uno que la gente disfruta usar.</p>
+      </div>
+    </div>
+  </article>
+
+  <div class="px-[7.5vw] pb-28 lg:pb-40">
+    <div class="border-t border-tinta/15 pt-8 lg:text-right">
+      <a href="/marfil/blog" class="inline-block border-b border-tinta pb-1 transition-colors duration-200 hover:border-humo font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] [font-stretch:112%] hover:text-humo lg:text-[12.5px]">Volver al blog →</a>
+    </div>
+  </div>
+
+</main>
+
+
+<footer class="border-t border-tinta/15 px-[7.5vw] pb-10 pt-16 lg:pt-20">
+  <div class="grid grid-cols-12 gap-y-12">
+    <a href="/marfil/" class="col-span-12 whitespace-nowrap font-serif text-[48px] transition-colors duration-200 hover:text-humo font-medium leading-none tracking-[-0.02em] lg:col-span-5 lg:text-[64px] [&_em]:mr-[0.06em] [&_em]:text-[0.36em] [&_em]:font-normal [&_em]:italic [&_em]:tracking-normal"><em>casa</em>marfil</a>
+    <nav class="col-span-6 lg:col-span-2 lg:col-start-7" aria-label="Pie de página">
+      <p class="font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] text-humo [font-stretch:112%] lg:text-[12.5px]">Menú</p>
+      <ul class="mt-4 space-y-1 font-serif text-[17px]">
+        
+        <li><a href="/marfil/" class="transition-colors duration-200 hover:text-humo">Inicio</a></li>
+        
+        <li><a href="/marfil/page" class="transition-colors duration-200 hover:text-humo">Nosotros</a></li>
+        
+        <li><a href="/marfil/blog" class="transition-colors duration-200 hover:text-humo">Blog</a></li>
+        
+        <li><a href="/marfil/#contacto" class="transition-colors duration-200 hover:text-humo">Contacto</a></li>
+        
+      </ul>
+    </nav>
+    <div class="col-span-6 lg:col-span-2">
+      <p class="font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] text-humo [font-stretch:112%] lg:text-[12.5px]">Estudio</p>
+      <p class="mt-4 font-serif text-[17px] leading-snug"><span class="block">Carrera 73 # 39B-24</span><span class="block">Laureles, Medellín</span><span class="block">Mar–Sáb, 10:00–18:00</span></p>
+    </div>
+    <div class="col-span-12 lg:col-span-2">
+      <p class="font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] text-humo [font-stretch:112%] lg:text-[12.5px]">Redes</p>
+      <ul class="mt-4 space-y-1 font-serif text-[17px]">
+        
+        <li><a href="/marfil/#contacto" class="transition-colors duration-200 hover:text-humo">Instagram</a></li>
+        
+        <li><a href="/marfil/#contacto" class="transition-colors duration-200 hover:text-humo">WhatsApp</a></li>
+        
+        <li><a href="/marfil/#contacto" class="transition-colors duration-200 hover:text-humo">hola@marfil.co</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="mt-20 grid grid-cols-12 items-end text-humo lg:mt-28">
+    <p class="col-span-5 max-w-[7.9em] font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] [font-stretch:112%] lg:col-span-2 lg:text-[12.5px]">© 2026 Marfil</p>
+    <p class="col-span-7 max-w-[7.9em] justify-self-end text-right font-grot text-[10.5px] uppercase leading-[1.15] tracking-[0.035em] [font-stretch:112%] lg:col-span-3 lg:text-[12.5px]">Hecho en Medellín</p>
+  </div>
+</footer></body>
+</html>
